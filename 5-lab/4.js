@@ -11,22 +11,17 @@ const array = [
 
 let movies = []
 
-
-
 class Movie{
     constructor(name, director, date){
         this.name = name
         this.director = director
         this.date = date
     }
-
     printJSON(){
         if (this.name && this.director && this.date) 
             console.log(JSON.stringify(this));
     }
-
 }
-
 
 function fun1(array){
 
@@ -56,8 +51,6 @@ function fun1(array){
         return null;
     }
 }
-
-
 
 fun1(array)
 

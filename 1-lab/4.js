@@ -7,8 +7,6 @@ people_count = 40
 category = "Regular"
 day = "Saturday"
 
-
-
 table = [
     [8.45, 9.80, 10.46],
     [10.90, 15.60, 16],
@@ -18,12 +16,8 @@ table = [
 days = ["Friday", "Saturday", "Sunday"]
 categorys = ["Students","Corporate" ,"Regular"]
 
-
 day_index = days.indexOf(day)
 category_index = categorys.indexOf(category)
-
-
-
 
 if (people_count >= 30 && category == "Students"){
     total_price = people_count * table[category_index][day_index]
@@ -41,6 +35,5 @@ else if (category == "Regular" && people_count >= 10 && people_count <= 20){
 else{
     total_price = people_count * table[category_index][day_index]
 }
-
 
 console.log(`Total price: ${total_price.toFixed(2)}`)

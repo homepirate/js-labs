@@ -2,7 +2,7 @@ function progress_bar(num){
     if (num < 0 || num > 100){
         throw new Error("0 <= num <= 100")
     }
-    bar = progress = '[' + '%'.repeat(num / 10) + '.'.repeat(10 - Math.floor(num / 10)) + ']'
+    bar = '[' + '%'.repeat(num / 10) + '.'.repeat(10 - Math.floor(num / 10)) + ']'
     if (num == 100){
         percent = `${num}% Complete!`
         console.log(percent + '\n' + bar)
@@ -10,9 +10,7 @@ function progress_bar(num){
     }
     percent = num + "%";
     console.log(percent + ' ' + bar + '\n' + "Still loading...")
-
 }
-
 
 progress_bar(30)
 progress_bar(50)
